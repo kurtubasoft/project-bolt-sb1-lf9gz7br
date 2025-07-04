@@ -211,7 +211,7 @@ function App() {
             <div className="flex justify-between items-center py-4">
               <div className="flex items-center space-x-3">
                 <img 
-                  src="/kurtuba_logo.png" 
+                  src="/kurtuba_logo copy.png" 
                   alt="Kurtuba Soft" 
                   className="h-10 w-auto"
                 />
@@ -277,7 +277,7 @@ function App() {
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-3">
               <img 
-                src="/kurtuba_logo.png" 
+                src="/kurtuba_logo copy.png" 
                 alt="Kurtuba Soft" 
                 className="h-10 w-auto"
               />
@@ -379,10 +379,19 @@ function App() {
                   }}
                 />
               </div>
-              {/* Floating shadow effect */}
+              
+              {/* Enhanced floating shadow effects */}
               <div 
-                className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-2xl blur-3xl transform translate-y-8 scale-95"
+                className="absolute inset-0 bg-gradient-to-br from-blue-400/30 to-purple-400/30 rounded-2xl blur-3xl transform translate-y-12 scale-110"
                 style={{ zIndex: -1 }}
+              ></div>
+              <div 
+                className="absolute inset-0 bg-gradient-to-br from-pink-400/20 to-blue-400/20 rounded-2xl blur-2xl transform translate-y-8 scale-105"
+                style={{ zIndex: -2 }}
+              ></div>
+              <div 
+                className="absolute inset-0 bg-gradient-to-br from-purple-400/15 to-pink-400/15 rounded-2xl blur-xl transform translate-y-4 scale-100"
+                style={{ zIndex: -3 }}
               ></div>
               
               {/* Floating elements */}
@@ -751,7 +760,7 @@ function App() {
             <div>
               <div className="flex items-center space-x-3 mb-4">
                 <img 
-                  src="/kurtuba_logo.png" 
+                  src="/kurtuba_logo copy.png" 
                   alt="Kurtuba Soft" 
                   className="h-8 w-auto"
                 />
@@ -799,20 +808,25 @@ function App() {
         </div>
       </footer>
 
-      {/* WhatsApp Button */}
+      {/* Enhanced WhatsApp Button */}
       <motion.a
         href="https://wa.me/905551234567"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all duration-300 z-50 hover:scale-110"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
+        className="fixed bottom-6 right-6 bg-green-500 text-white p-5 rounded-full shadow-2xl hover:bg-green-600 transition-all duration-300 z-50 hover:scale-110"
+        whileHover={{ scale: 1.15 }}
+        whileTap={{ scale: 0.95 }}
         style={{
-          boxShadow: '0 8px 32px rgba(34, 197, 94, 0.4), 0 0 0 0 rgba(34, 197, 94, 0.7)',
-          animation: 'pulseGlow 2s infinite'
+          boxShadow: '0 12px 40px rgba(34, 197, 94, 0.6), 0 0 0 0 rgba(34, 197, 94, 0.8)',
+          animation: 'pulseGlow 2s infinite',
+          background: 'linear-gradient(135deg, #25D366, #128C7E)',
+          border: '3px solid rgba(255, 255, 255, 0.3)'
         }}
       >
-        <MessageCircle className="w-8 h-8" />
+        <MessageCircle className="w-10 h-10" />
+        <div className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-6 h-6 flex items-center justify-center animate-bounce">
+          1
+        </div>
       </motion.a>
     </div>
   );
